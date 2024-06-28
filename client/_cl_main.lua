@@ -30,21 +30,6 @@ RegisterCommand("openbennys", function()
     testshit()
 end)
 
-
-function GetModPrice(Name, ModIndex)
-    local Multiplier = 1.0
-    if IsEmployedAtMechanic then Multiplier = 0.7 end
-
-    local Price = nil
-    if ModIndex ~= nil and type(Config.Prices[Name]) == 'table' then
-        Price = Config.Prices[Name][ModIndex] ~= nil and Config.Prices[Name][ModIndex] or Config.Prices[Name][#Config.Prices[Name]]
-    elseif Config.Prices[Name] then
-        Price = Config.Prices[Name]
-    end
-
-    return (Price ~= nil and math.floor(Price * Multiplier) or nil)
-end
-
 function testshit()
     local playerVeh = GetVehiclePedIsIn(PlayerPedId(), false)
 
@@ -62,12 +47,9 @@ function testshit()
         DisplayRadar(false)
 
         else 
-            exports['mercy-ui']:Notify("Preferences", "Not in a vehicle!", "error", 5000)
+            print("Not in a vehicle")
         end
     end
-
-
-
 
 function CloseMenu()
     local playerVeh = GetVehiclePedIsIn(PlayerPedId(), false)
@@ -78,9 +60,7 @@ function CloseMenu()
     FreezeEntityPosition(playerVeh, false)
     DisplayRadar(true)
   
-    exports['mercy-ui']:SendUIMessage('Hud', 'SetAppVisiblity', {
-        Visible = true,
-    })
+
     SendNUIMessage({
         Action = 'SetVisibility',
         Bool = false,
@@ -92,13 +72,8 @@ function CloseMenu()
   end
 
 
-
-
 ---
 
-function Round(Value, Decimals)
-    return Decimals and math.floor((Value * 10 ^ Decimals) + 0.5) / (10 ^ Decimals) or math.floor(Value + 0.5)
-end
 
 function GetModPrice(Name, ModIndex)
     local Multiplier = 1.0
@@ -114,9 +89,6 @@ function GetModPrice(Name, ModIndex)
     return (Price ~= nil and math.floor(Price * Multiplier) or nil)
 end
 
-function GetIsInBennysZone()
-    return IsInBennysZone
-end
 
 function CloseBennys(Data, Cb)
     InBennys, IsAdmin = false, false
@@ -131,28 +103,6 @@ function CloseBennys(Data, Cb)
     })
 end
 
-function CanOpenBennys(Authorized)
-    if not Authorized then return true end
-
-    if Authorized.Job then
-        local MyJob = PlayerModule.GetPlayerData().Job.Name
-        for k, Job in pairs(Authorized.Job) do
-            if Job == MyJob then
-                return true
-            end
-        end
-    end
-
-    if Authorized.Business then
-        for k, Business in pairs(Authorized.Business) do
-            if exports['mercy-business']:IsPlayerInBusiness(Business) then
-                return true
-            end
-        end
-    end
-
-    return false
-end
 
 function IsBennysGov(Authorized)
     if not Authorized then return false end

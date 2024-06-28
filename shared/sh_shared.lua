@@ -15,7 +15,7 @@ Config.WheelFitment = {
   RotationRight = { 0.0, 1.0 },
 }
 
-
+-- FUTURE USE OF THESE PRICES
 Config.Prices = {
 	['Respray'] = 400,
 	['ModPlateIndex'] = 400,
@@ -292,10 +292,10 @@ Config.WheelsType = {
 		name = "Wheel Accessories",
 		img = "./images/wheel.png"
 	},
-	-- ["wheelcolor"] = {
-	-- 	name = "Wheel Color",
-	-- 	img = "./images/wheel.png"
-	-- },
+	["wheelcolor"] = {
+		name = "Wheel Color",
+		img = "./images/wheel.png"
+	},
 	["wheelSmoke"] = {
 		name = "Wheel Smoke",
 		img = "./images/wheel.png",
@@ -520,30 +520,7 @@ Config.Colors = {
 		{ name = "Limo", tint = 4, price = 500},
 		{ name = "Green", tint = 5, price = 500},
 	}
-	
-	Config.Suspensions =  {
-		{name = "Lowered Suspension",mod = 0, price = 100},
-		{name = "Street Suspension",mod = 1, price = 250},
-		{name = "Sport Suspension",mod = 2, price = 500},
-		{name = "Competition Suspension",mod = 3, price = 1000},
-	}
-	Config.Brakes = {
-		{name = "Street Brakes", mod = 0, price = 500},
-		{name = "Sport Brakes", mod = 1, price = 1000},
-		{name = "Race Brakes", mod = 2, price = 1500},
-	}
 
-	Config.Engine = {
-		{name = "Engine Upgrade, Level 3", mod = 2, price = 1500},
-		{name = "Engine Upgrade, Level 2", mod = 1, price = 3000},
-		{name = "Engine Upgrade, Level 1", mod = 0, price = 4500},
-	}
-
-	Config.Transmission = {
-		{name = "Street Transmission", mod = 0, price = 500},
-		{name = "Sports Transmission", mod = 1, price = 1000},
-		{name = "Race Transmission", mod = 2, price = 1500},
-	}
 
 	Config.Wheel = {
 		wheelaccessories = {
@@ -753,188 +730,188 @@ Config.Colors = {
 			increaseby = 1000
 		},
 		
-		-- Windows = {
-		-- 	modtype = 46,
-		-- 	startprice = 2000,
-		-- 	increaseby = 1000
-		-- },
+		Windows = {
+			modtype = 46,
+			startprice = 2000,
+			increaseby = 1000
+		},
 		
-		-- Tank = {
-		-- 	modtype = 45,
-		-- 	startprice = 2000,
-		-- 	increaseby = 1000
-		-- },
+		Tank = {
+			modtype = 45,
+			startprice = 2000,
+			increaseby = 1000
+		},
 
-		-- Aerials = {
-		-- 	modtype = 43,
-		-- 	startprice = 2000,
-		-- 	increaseby = 1000
-		-- },
+		Aerials = {
+			modtype = 43,
+			startprice = 2000,
+			increaseby = 1000
+		},
 
-		-- ArchCover = {
-		-- 	modtype = 42,
-		-- 	startprice = 2000,
-		-- 	increaseby = 1000
-		-- },
+		ArchCover = {
+			modtype = 42,
+			startprice = 2000,
+			increaseby = 1000
+		},
 
-		-- Struts = {
-		-- 	modtype = 41,
-		-- 	startprice = 2000,
-		-- 	increaseby = 1000
-		-- },
+		Struts = {
+			modtype = 41,
+			startprice = 2000,
+			increaseby = 1000
+		},
 		
-		-- AirFilter = {
-		-- 	modtype = 40,
-		-- 	startprice = 2000,
-		-- 	increaseby = 1000
-		-- },
+		AirFilter = {
+			modtype = 40,
+			startprice = 2000,
+			increaseby = 1000
+		},
 		
-		-- EngineBlock = {
-		-- 	modtype = 39,
-		-- 	startprice = 2000,
-		-- 	increaseby = 1000
-		-- },
+		EngineBlock = {
+			modtype = 39,
+			startprice = 2000,
+			increaseby = 1000
+		},
 
-		-- Hydraulics = {
-		-- 	modtype = 38,
-		-- 	startprice = 5000,
-		-- 	increaseby = 2500
-		-- },
+		Hydraulics = {
+			modtype = 38,
+			startprice = 5000,
+			increaseby = 2500
+		},
 		
-		-- Trunk = {
-		-- 	modtype = 37,
-		-- 	startprice = 5000,
-		-- 	increaseby = 1250
-		-- },
+		Trunk = {
+			modtype = 37,
+			startprice = 5000,
+			increaseby = 1250
+		},
 
-		-- Speakers = {
-		-- 	modtype = 36,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		Speakers = {
+			modtype = 36,
+			startprice = 500,
+			increaseby = 150
+		},
 
-		-- Plaques = {
-		-- 	modtype = 35,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		Plaques = {
+			modtype = 35,
+			startprice = 500,
+			increaseby = 150
+		},
 		
-		-- ShiftLeavers = {
-		-- 	modtype = 34,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		ShiftLeavers = {
+			modtype = 34,
+			startprice = 500,
+			increaseby = 150
+		},
 		
-		-- Stringwheel = {
-		-- 	modtype = 33,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		Stringwheel = {
+			modtype = 33,
+			startprice = 500,
+			increaseby = 150
+		},
 		
-		-- Seats = {
-		-- 	modtype = 32,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		Seats = {
+			modtype = 32,
+			startprice = 500,
+			increaseby = 150
+		},
 		
-		-- DoorSpeaker = {
-		-- 	modtype = 31,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		DoorSpeaker = {
+			modtype = 31,
+			startprice = 500,
+			increaseby = 150
+		},
 
-		-- Dial = {
-		-- 	modtype = 30,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
-		-- Dashboard = {
-		-- 	modtype = 29,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		Dial = {
+			modtype = 30,
+			startprice = 500,
+			increaseby = 150
+		},
+		Dashboard = {
+			modtype = 29,
+			startprice = 500,
+			increaseby = 150
+		},
 		
-		-- Ornaments = {
-		-- 	modtype = 28,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		Ornaments = {
+			modtype = 28,
+			startprice = 500,
+			increaseby = 150
+		},
 		
-		-- Trim = {
-		-- 	modtype = 27,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		Trim = {
+			modtype = 27,
+			startprice = 500,
+			increaseby = 150
+		},
 		
-		-- VanityPlates = {
-		-- 	modtype = 26,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		VanityPlates = {
+			modtype = 26,
+			startprice = 500,
+			increaseby = 150
+		},
 		
-		-- PlateHolder = {
-		-- 	modtype = 25,
-		-- 	startprice = 500,
-		-- 	increaseby = 150
-		-- },
+		PlateHolder = {
+			modtype = 25,
+			startprice = 500,
+			increaseby = 150
+		},
 		
-		-- Roof = {
-		-- 	modtype = 10,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		Roof = {
+			modtype = 10,
+			startprice = 500,
+			increaseby = 500
+		},
 		
-		-- Fenders = {
-		-- 	modtype = 8,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		Fenders = {
+			modtype = 8,
+			startprice = 500,
+			increaseby = 500
+		},
 		
-		-- Hood = {
-		-- 	modtype = 7,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		Hood = {
+			modtype = 7,
+			startprice = 500,
+			increaseby = 500
+		},
 		
-		-- Grille = {
-		-- 	modtype = 6,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		Grille = {
+			modtype = 6,
+			startprice = 500,
+			increaseby = 500
+		},
 		
-		-- RollCage = {
-		-- 	modtype = 5,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		RollCage = {
+			modtype = 5,
+			startprice = 500,
+			increaseby = 500
+		},
 		
-		-- Exhaust = {
-		-- 	modtype = 4,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		Exhaust = {
+			modtype = 4,
+			startprice = 500,
+			increaseby = 500
+		},
 		
-		-- Skirts = {
-		-- 	modtype = 3,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		Skirts = {
+			modtype = 3,
+			startprice = 500,
+			increaseby = 500
+		},
 		
-		-- RearBumpers = {
-		-- 	modtype = 2,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		RearBumpers = {
+			modtype = 2,
+			startprice = 500,
+			increaseby = 500
+		},
 		
-		-- FrontBumpers = {
-		-- 	modtype = 1,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		FrontBumpers = {
+			modtype = 1,
+			startprice = 500,
+			increaseby = 500
+		},
 		
-		-- Spoilers = {
-		-- 	modtype = 0,
-		-- 	startprice = 500,
-		-- 	increaseby = 500
-		-- },
+		Spoilers = {
+			modtype = 0,
+			startprice = 500,
+			increaseby = 500
+		},
 	}

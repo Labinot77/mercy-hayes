@@ -44,9 +44,6 @@ end
 
 
 
-
-
-
 -- CAMERA
 
 RegisterNUICallback('move_camera', function(data, cb)
@@ -384,10 +381,3 @@ function GetModStatus(modType)
     return vehicleMods[modType]
 end
 
-function GetModPrice(modType, modIndex)
-    local priceData = Config.Prices[modType]
-    if type(priceData) == "table" then
-        return priceData[modIndex + 1] or priceData[#priceData]
-    end
-    return priceData or 1000 -- Default to 1000 if no price is set
-end
