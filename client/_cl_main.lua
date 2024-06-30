@@ -1,30 +1,3 @@
--- EntityModule, LoggerModule, EventsModule, CallbackModule, FunctionsModule, PlayerModule = nil
-
--- local _Ready = false
--- AddEventHandler('Modules/client/ready', function()
---     if not _Ready then
---         _Ready = true
---     end
---     TriggerEvent('Modules/client/request-dependencies', {
---         'Player',
---         'Events',
---         'Entity',
---         'Logger',
---         'Vehicle',
---         'Callback',
---         'Functions',
---     }, function(Succeeded)
---         if not Succeeded then return end
---         PlayerModule = exports['mercy-base']:FetchModule('Player')
---         EntityModule = exports['mercy-base']:FetchModule("Entity")
---         LoggerModule = exports['mercy-base']:FetchModule('Logger')
---         VehicleModule = exports['mercy-base']:FetchModule('Vehicle')
---         EventsModule = exports['mercy-base']:FetchModule('Events')
---         CallbackModule = exports['mercy-base']:FetchModule('Callback')
---         FunctionsModule = exports['mercy-base']:FetchModule('Functions')
---     end)
--- end)
-
 QBCore = exports['qb-core']:GetCoreObject()
 
 
@@ -41,10 +14,6 @@ function testshit()
         SetVehicleOnGroundProperly(playerVeh)
 
         BuildMenu(playerVeh)
-
-        -- exports['mercy-ui']:SendUIMessage('Hud', 'SetAppVisiblity', {
-        --     Visible = false,
-        -- })
 
         DisplayRadar(false)
 

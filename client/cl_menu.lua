@@ -1,5 +1,4 @@
 
-local openUI = false
 local SellectMode = ""
 local SellectItem = ""
 local colorstyp = ""
